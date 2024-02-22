@@ -1,0 +1,10 @@
+<img
+  *ngIf="!list"
+  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDQxcTg0b2FycjBhZnMyaGVsbnhvYmhqcW10NXQ3Y3c5NjZlOGpuaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTk9ZvMnbIiIew7IpW/giphy.gif"
+/>
+
+<div *ngIf="list?.length===0">There are no records to display</div>
+
+<ng-container *ngIf="list && list.length> 0">
+    <ng-content select="[content]"></ng-content>
+</ng-container>
