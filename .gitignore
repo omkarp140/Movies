@@ -43,3 +43,4 @@ msbuild.wrn
 publish/
 ./PublishProfiles/
 *.pubxml
+AngularMovies.Web/.angular/cache/
