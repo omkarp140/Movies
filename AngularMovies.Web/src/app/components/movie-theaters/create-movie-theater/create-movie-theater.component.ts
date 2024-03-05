@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { movieTheaterCreationDto } from '../movie-theaters.model';
 
 @Component({
   selector: 'app-create-movie-theater',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-movie-theater.component.css']
 })
 export class CreateMovieTheaterComponent {
+
+  saveChanges(movieTheater: movieTheaterCreationDto){
+    console.log(movieTheater);
+  }
 
 }
