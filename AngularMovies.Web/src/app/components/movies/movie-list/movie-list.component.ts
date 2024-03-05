@@ -11,7 +11,7 @@ export class MovieListComponent implements OnInit {
   }
 
   @Input()
-  movies: { title: string; releaseDate: Date; price: number; poster: string }[] | undefined;
+  movies: { title: string; poster: string }[] | undefined;
 
   remove(index: number){
     this.movies?.splice(index, 1);

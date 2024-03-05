@@ -18,6 +18,16 @@ import { EditActorComponent } from './actors/edit-actor/edit-actor.component';
 import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { EditMovieTheaterComponent } from './movie-theaters/edit-movie-theater/edit-movie-theater.component';
 import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FormGenreComponent } from './genres/form-genre/form-genre.component';
+import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
+import { FormActorComponent } from './actors/form-actor/form-actor.component';
+import { InputImgComponent } from './utilities/input-img/input-img.component';
+import { InputMarkdownComponent } from './utilities/input-markdown/input-markdown.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { MovieTheaterFormComponent } from './movie-theaters/movie-theater-form/movie-theater-form.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { MapComponent } from './utilities/map/map.component';
 
 @NgModule({
   declarations: [
@@ -37,11 +47,22 @@ import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
     EditGenreComponent,
     EditMovieTheaterComponent,
     EditMovieComponent,
+    FormGenreComponent,
+    MovieFilterComponent,
+    FormActorComponent,
+    InputImgComponent,
+    InputMarkdownComponent,
+    MovieTheaterFormComponent,
+    MapComponent,    
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule,
+    FormsModule,
+    LeafletModule,
+    MarkdownModule.forRoot()
   ],
   exports: [
     MovieListComponent,
