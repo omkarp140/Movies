@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { movieCreationDto } from '../movies.model';
 
 @Component({
   selector: 'app-create-movie',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class CreateMovieComponent {
 
+  saveChanges(movieCreationDto: movieCreationDto){
+    console.log(movieCreationDto);
+  }
 }

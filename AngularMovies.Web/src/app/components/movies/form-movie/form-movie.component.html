@@ -29,6 +29,15 @@
     <app-input-markdown [markdownContent]="model?.summary ?? ''"
         (changeMarkdown)="changeMarkdown($event)"></app-input-markdown>
 
+    <h4>Select Genres</h4>
+    <app-mutliple-selector [NonSelectedItems]="nonSelectedGenres" [SelectedItems]="selectedGenres"></app-mutliple-selector>
+
+    <h4>Select Movie Theater</h4>
+    <app-mutliple-selector [NonSelectedItems]="nonSelectedTheaters" [SelectedItems]="selectedTheaters"></app-mutliple-selector>
+
+    <h4>Select Actors</h4>
+    <app-actors-auto-complete></app-actors-auto-complete>
+
     <div>
         <button mat-flat-button color="primary" [disabled]="form.invalid">Save Changes</button>
         <a mat-stroked-button routerLink="/movies">Cancel</a>

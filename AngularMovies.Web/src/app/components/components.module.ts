@@ -29,6 +29,8 @@ import { MovieTheaterFormComponent } from './movie-theaters/movie-theater-form/m
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { MapComponent } from './utilities/map/map.component';
 import { FormMovieComponent } from './movies/form-movie/form-movie.component';
+import { MutlipleSelectorComponent } from './utilities/mutliple-selector/mutliple-selector.component';
+import { ActorsAutoCompleteComponent } from './actors/actors-auto-complete/actors-auto-complete.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { FormMovieComponent } from './movies/form-movie/form-movie.component';
     InputMarkdownComponent,
     MovieTheaterFormComponent,
     MapComponent,
-    FormMovieComponent,    
+    FormMovieComponent,
+    MutlipleSelectorComponent,
+    ActorsAutoCompleteComponent,    
   ],
   imports: [
     CommonModule,
