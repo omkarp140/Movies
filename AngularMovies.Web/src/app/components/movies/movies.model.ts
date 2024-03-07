@@ -1,5 +1,7 @@
 export interface movieCreationDto extends movieBaseDto {
     poster: File;
+    genreIds: number[];
+    movieTheaterIds: number[];
 }
 
 export interface movieDto extends movieBaseDto{
