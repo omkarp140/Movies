@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Api", "Movies.Api\Movies.Api.csproj", "{D9485059-810F-460F-B729-88B083F545D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Api", "Movies.Api\Movies.Api.csproj", "{D9485059-810F-460F-B729-88B083F545D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Models", "Movies.Models\Movies.Models.csproj", "{99C17E31-4DF3-4A47-BB4B-8D893D52A060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.BLL", "Movies.BLL\Movies.BLL.csproj", "{900B10A0-EEA9-4131-9556-CFBB9C99C0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.DAL", "Movies.DAL\Movies.DAL.csproj", "{C8DEEDFB-F69D-42A5-8FA9-3E4FF2A0DE1F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99C17E31-4DF3-4A47-BB4B-8D893D52A060} = {99C17E31-4DF3-4A47-BB4B-8D893D52A060}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +24,18 @@ Global
 		{D9485059-810F-460F-B729-88B083F545D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9485059-810F-460F-B729-88B083F545D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9485059-810F-460F-B729-88B083F545D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C17E31-4DF3-4A47-BB4B-8D893D52A060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C17E31-4DF3-4A47-BB4B-8D893D52A060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C17E31-4DF3-4A47-BB4B-8D893D52A060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C17E31-4DF3-4A47-BB4B-8D893D52A060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{900B10A0-EEA9-4131-9556-CFBB9C99C0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900B10A0-EEA9-4131-9556-CFBB9C99C0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900B10A0-EEA9-4131-9556-CFBB9C99C0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900B10A0-EEA9-4131-9556-CFBB9C99C0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8DEEDFB-F69D-42A5-8FA9-3E4FF2A0DE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8DEEDFB-F69D-42A5-8FA9-3E4FF2A0DE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8DEEDFB-F69D-42A5-8FA9-3E4FF2A0DE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8DEEDFB-F69D-42A5-8FA9-3E4FF2A0DE1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
